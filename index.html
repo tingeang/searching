@@ -3,6 +3,7 @@
 	<title>Search Me!</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>  
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <style>
@@ -229,48 +230,5 @@ input[type=submit] {
     <input type="submit" value="Search">
     </div>
 
-
-
-
-<script type="text/javascript">
-
-$('input:text').focus(
-    function(){
-        $(this).val('');
-    });
-
-////////
-
-
-$(".realbar").each(function () {
-    var randomtop = Math.floor(Math.random() * 5) - 7 + '%';
-    var randomleft = Math.floor(Math.random() * 50) + 5 + '%';
-    $(this).css({
-        "top": randomtop,
-        "left": randomleft,
-    });
-});
-$( function() {
-    $( ".realbar" ).draggable({stack: ".realbar", scroll: false});
-  } );
-
-////////
-
-$(".anotherbar").each(function () {
-    var randomtop = Math.floor(Math.random() * 5 ) - 10 + '%';
-    var randomleft = Math.floor(Math.random() * 60) + 10 + '%';
-    $(this).css({
-        "top": randomtop,
-        "left": randomleft,
-        "position": 'relative',
-    });
-});
-$( function() {
-    $( ".anotherbar" ).draggable({stack: ".anotherbar", scroll: false});
-  } );
-
-
-
-</script>
 </body>
 </html>
