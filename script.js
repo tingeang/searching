@@ -3,9 +3,6 @@ $('input:text').focus(
         $(this).val('');
     });
 
-////////
-
-
 $(".realbar").each(function () {
     var randomtop = Math.floor(Math.random() * 5) - 7 + '%';
     var randomleft = Math.floor(Math.random() * 50) + 5 + '%';
@@ -17,8 +14,6 @@ $(".realbar").each(function () {
 $( function() {
     $( ".realbar" ).draggable({stack: ".realbar", scroll: false});
   } );
-
-////////
 
 $(".anotherbar").each(function () {
     var randomtop = Math.floor(Math.random() * 5 ) - 10 + '%';
